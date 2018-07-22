@@ -11,12 +11,8 @@ The goals / steps of this project are the following:
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
-The videos with lane lines found are:
-[//]: # (Image References)
-
-[video1]: https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4 "Video"
-![video1](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4 "Video")
-![video2](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4)
+![Project Video](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4)
+![Challenge Video](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4)
 
 ---
 ### Camera Calibration
@@ -108,9 +104,9 @@ I implemented in the function `draw_area`.  Here is an example of my result on a
 
 #### 1. Provide a link to your final video output.  It performed reasonably well on the entire project video.
 
-![video1](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4)
+![Project Video](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4)
 
-![video2](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4)
+![Challenge Video](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4)
 
  #### 2. Pipeline with Lines Class
 Line class is used to store the historical lane information. The advantages include:
