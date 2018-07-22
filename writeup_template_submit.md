@@ -13,8 +13,8 @@ The goals / steps of this project are the following:
 
 The videos with lane lines found are:
 
-![video1](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4)
-![video2](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4)
+[video1]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4')
+[video2]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4')
 
 ---
 ### Camera Calibration
@@ -27,20 +27,20 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result:
 
-![alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/tree/master/writeup_images/camera_calibration.png')
+[alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/camera_calibration.png')
 
 ### Pipeline (single images)
 
 #### 1. Provide an example of a distortion-corrected image.
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
-![alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/tree/master/writeup_images/image_undist.png')
+[alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/image_undist.png')
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
 I used a combination of color and gradient thresholds to generate a binary image (`binary_threshold` in 5th cell). I Here's an example of my output for this step. I tried extraction from HLS and HSV colorspaces and sobel gradients of X and Y directions. The most clear binary image is combination from S, L and V spaces.
 
-![alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/tree/master/writeup_images/threshold_binary.png')
+[alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/threshold_binary.png')
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -55,7 +55,7 @@ The function `perspective_transform` is defined cell 7 in the IPython notebook).
 
 I verified that my perspective transform was working as expected by drawing the `pt[1-4]` and `dpt[1-4]` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image (use `straight_lines1` image).
 
-![alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/tree/master/writeup_images/transform_points.png')
+[alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/transform_points.png')
 
 The actual meter per pixel are defined with respect to the pixels in the object space. They are used for real curvature and offset computation later.  
 ```
@@ -69,7 +69,7 @@ I use sliding window for searching the lane lines from scratch (function `search
 In the pipeline, a function `find_lane_pixels` is used to choose when to reset and search again from scratch.
 An example of fitted lane lines is as below:
 
-![alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/tree/master/writeup_images/sliding_window.png')
+[alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/sliding_window.png')
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -89,14 +89,15 @@ car_offset = (0.5*img.shape[1] - (np.average(left_fitx)+ np.average(right_fitx))
 
 I implemented in the function `draw_area`.  Here is an example of my result on a test image:
 
-![alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/tree/master/writeup_images/draw_area.png')
+[alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/draw_area.png')
 
 #### 7. For challenge video, the ground are split with dark and light concrete. They will be detected with original algorithm as fake lane lines. Thresholds in new color space needs to be used to exclude them. LAB color space is added. B is good to detect yellow lines, and L is inverted to exclude the fake concrete lines in the sobel gradient extractions.
-![alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/tree/master/writeup_images/lab.jpg')
 
-![alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/tree/master/writeup_images/threshold_binary_challenge.png')
+[alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/lab.jpg')
 
-![alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/tree/master/writeup_images/challenge_draw_area.png')
+[alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/threshold_binary_challenge.png')
+
+[alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/challenge_draw_area.png')
 
 
 ---
@@ -105,8 +106,9 @@ I implemented in the function `draw_area`.  Here is an example of my result on a
 
 #### 1. Provide a link to your final video output.  It performed reasonably well on the entire project video.
 
-![video1](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4)
-![video2](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4)
+[video1](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4)
+
+[video2](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4)
 
  #### 2. Pipeline with Lines Class
 Line class is used to store the historical lane information. The advantages include:
