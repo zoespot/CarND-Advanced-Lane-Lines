@@ -13,8 +13,8 @@ The goals / steps of this project are the following:
 
 The videos with lane lines found are:
 
-[video1]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4')
-[video2]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4')
+![video1](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4)
+![video2](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4)
 
 ---
 ### Camera Calibration
@@ -27,7 +27,7 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result:
 
-[alt text]('https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/camera_calibration.png')
+![alt text](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/camera_calibration.png)
 
 ### Pipeline (single images)
 
