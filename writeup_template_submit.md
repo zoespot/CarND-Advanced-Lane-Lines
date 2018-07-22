@@ -14,6 +14,9 @@ The goals / steps of this project are the following:
 ![Project Video](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4)
 ![Challenge Video](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4)
 
+Code for project video is [detect-project](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/detect-project.ipynb)
+Code for challenge video is [detect-challenge](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/detect-challenge.ipynb)
+
 ---
 ### Camera Calibration
 
