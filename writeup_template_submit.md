@@ -12,7 +12,9 @@ The goals / steps of this project are the following:
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
 The videos with lane lines found are:
+[//]: # (Image References)
 
+[video1]: https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4 "Video"
 ![video1](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_project_video.mp4 "Video")
 ![video2](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/output_videos/output_challenge_video.mp4)
 
@@ -93,7 +95,7 @@ I implemented in the function `draw_area`.  Here is an example of my result on a
 
 #### 7. For challenge video, the ground are split with dark and light concrete. They will be detected with original algorithm as fake lane lines. Thresholds in new color space needs to be used to exclude them. LAB color space is added. B is good to detect yellow lines, and L is inverted to exclude the fake concrete lines in the sobel gradient extractions.
 
-![alt text](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/lab.jpg)
+![alt text](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/LAB.jpg)
 
 ![alt text](https://github.com/zoespot/CarND-Advanced-Lane-Lines/blob/master/writeup_images/threshold_binary_challenge.png)
 
